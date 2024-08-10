@@ -14,18 +14,15 @@ peso = int(input('Qual é seu peso? (Kg) '))
 altura = float(input('Qual é a sua altura? (m) '))
 imc = peso / (altura * altura)
 
+print('O IMC dessa pessoa é de {:.1f}'.format(imc))
+
 if imc < 18.5:
-    print('O IMS dessa pessoa é de {:.1f} \n'.format(imc))
     print('Você está abaixo do peso.')
 elif imc <= 25:
-    print('O IMS dessa pessoa é de {:.1f} \n'.format(imc), end='')
     print('Você está abaixo no peso ideal.')
 elif imc <= 30:
-    print('O IMS dessa pessoa é de {:.1f} \n'.format(imc), end='')
     print('Você está com sobrepeso.')
 elif imc <= 40:
-    print('O IMS dessa pessoa é de {:.1f} \n'.format(imc), end='')
     print('Você está abaixo com obesidade.')
 else:
-    print('O IMS dessa pessoa é de {:.1f} \n'.format(imc), end='')
     print('Você está abaixo com obesidade mórbida.')
