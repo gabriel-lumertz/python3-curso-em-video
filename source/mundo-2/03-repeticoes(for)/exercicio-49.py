@@ -2,7 +2,7 @@
 
 def calucularTabuada(numero):
     for i in range(1, 11):
-        print(f'{i} X {numero} = {i * numero}')
+        print(f'{numero} X {i} = {i * numero}')
 
 numero = int(input('Digite um número de 1 a 10: '))
 
